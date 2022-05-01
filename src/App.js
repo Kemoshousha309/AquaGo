@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import OxygenCalc from "./components/calculations/oxygen/oxygen";
+import CalculationsHomePage from "./components/calculationsHomePage/calculationsHomePage";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<h1>Home page</h1>} />
+        <Route path="calculations" element={<CalculationsHomePage />} />
+        <Route path="/dissolved-oxygen" element={<OxygenCalc />} />
+        <Route path="about" element={<h1>About Page</h1>} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

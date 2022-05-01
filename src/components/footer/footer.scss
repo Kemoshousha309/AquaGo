@@ -1,0 +1,59 @@
+@import "../../styles/utilites.scss";
+
+.footer {
+  background-color: var(--black-light);
+  color: white;
+  min-height: 18rem;
+  padding-top: 2rem !important;
+
+  &__paragraph {
+    text-align: center;
+    line-height: 2.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+  }
+
+  &__contact {
+    display: flex;
+    max-width: 100rem;
+    margin: 0 auto;
+    justify-content: center; 
+    margin-bottom: 3rem;
+  }
+
+  &__icon {
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: all 5s;
+
+    svg {
+      transition: all .4s;
+    }
+
+    svg:hover {
+      color: var(--blue-light);
+      transform: translateY(-.5rem);
+    }
+  }
+
+  &__copyright {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__authorName {
+    font-weight: bold;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-.5rem);
+      color: var(--blue-light);
+    }
+  }
+}

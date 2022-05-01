@@ -1,0 +1,12 @@
+@import "../../index.scss";
+@import "../../styles/utilites.scss";
+
+.calculationsHomePage {
+  min-height: 50rem;
+
+  &__operations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

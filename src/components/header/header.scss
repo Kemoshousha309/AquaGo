@@ -1,0 +1,40 @@
+@import "../../index.scss";
+@import "../../styles/utilites.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black-light);
+  min-height: 4rem;
+  color: white;
+
+  &__start {
+  }
+
+  &__end {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .header__link {
+      margin: 0 2rem;
+      @include respond(mobile_landscape) {
+        display: none;
+    }
+    }
+  }
+
+  &__barsIcon {
+    cursor: pointer;
+    display: none !important;
+
+    @include respond(mobile_landscape) {
+        display: block !important;
+    }
+  }
+
+  &__link {
+   @extend %link;
+  }
+}

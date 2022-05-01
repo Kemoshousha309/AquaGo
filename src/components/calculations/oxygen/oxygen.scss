@@ -1,0 +1,44 @@
+@import "../../../styles/utilites.scss";
+@import "../../../index.scss";
+
+.oxygenCalc {
+  min-height: 50rem;
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: start;
+  }
+
+  &__input {
+    width: 100% ;
+  }
+
+  &__button {
+    align-self: center;
+    @include respond(laptop) {
+    grid-column: 1 / -1;
+    justify-self: end;
+    }
+  }
+
+  &__resultContianer {
+    margin: 4rem 0;
+  }
+
+  &__result {
+  }
+  
+  &__DO {
+    vertical-align: middle;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 3.5rem;
+    min-height: 2.5rem;
+    padding: 1rem;
+  }
+  
+}
