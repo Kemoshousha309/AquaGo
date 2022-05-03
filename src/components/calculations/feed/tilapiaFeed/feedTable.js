@@ -133,6 +133,3 @@ export const feedTable = {
   },
 };
 
-function extract(wieght) {
-
-}
