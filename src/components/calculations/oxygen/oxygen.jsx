@@ -6,11 +6,10 @@ import {
   InputLabel,
   FormControl,
 } from "@mui/material";
-import { PureComponent } from "react";
-import { checkValidity } from "../../../utilities/utilities";
+import Calculator from "../Calculator";
 import "./oxygen.scss";
 
-class OxygenCalc extends PureComponent {
+class OxygenCalc extends Calculator { 
   state = {
     inputs: {
       fishNum: {
@@ -34,27 +33,9 @@ class OxygenCalc extends PureComponent {
     calculatedDO: null,
   };
 
-  inputChangeHandler = (e) => {
-    const id = e.target.name;
-    const value = e.target.value;
-    const inputs = { ...this.state.inputs };
-    inputs[id].value = value;
-    this.setState({ inputs: inputs });
-  };
-
   calcOxygenHandler = (e) => {
-    // check validity
-    const { inputs } = this.state;
-    let isValid = true;
-    for (const key in inputs) {
-      if (inputs[key].doValidation) {
-        const { valid, mess } = checkValidity(parseInt(inputs[key].value));
-        isValid = isValid && valid;
-        inputs[key].valid = valid;
-        inputs[key].mess = mess;
-      }
-    }
     // calculate the oxygen demand
+    const {isValid, inputs } = this.isInputsValid();
     let DO = null;
     if (isValid) {
       DO = this.calcOxygen(
