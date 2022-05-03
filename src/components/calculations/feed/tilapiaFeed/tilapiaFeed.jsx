@@ -55,7 +55,8 @@ class TilapiaFeed extends Calculator {
     const rowData = table[fishWieght];
     const feedRate = rowData.temp[temperature];
     const [init, final] = fishWieght.split("-");
-    const boiMass = (fishNum * ((parseInt(init) + parseInt(final)) / 2)) / 1000; // in kg
+    const boiMass = (fishNum * ((Number(init) + Number(final)) / 2)) / 1000; // in kg
+    console.log(boiMass)
     const feedIntake = Math.fround(boiMass * (feedRate / 100)).toFixed(3);
     return {
       feedIntake,
