@@ -2,7 +2,9 @@
   "name": "aquago",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
+    "@capacitor/android": "^3.5.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.5.0"
   }
 }

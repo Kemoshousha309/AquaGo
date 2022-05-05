@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import OperationCard from "../operationCard/operationCard";
+import OperationCard from "../../components/operationCard/operationCard";
 import "./calculationsHomePage.scss";
 
 class CalculationsHomePage extends PureComponent {

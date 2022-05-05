@@ -2,9 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Feed from "./components/calculations/feed/feed";
 import OxygenCalc from "./components/calculations/oxygen/oxygen";
-import CalculationsHomePage from "./components/calculationsHomePage/calculationsHomePage";
-import Footer from "./components/footer/footer";
-import Header from "./components/header/header";
+import Footer from "./layout/footer/footer";
+import Header from "./layout/header/header";
+import AboutPage from "./pages/aboutPage/aboutPage";
+import CalculationsHomePage from "./pages/calculationsHomePage/calculationsHomePage";
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
         <Route path="calculations" element={<CalculationsHomePage />} />
         <Route path="/dissolved-oxygen" element={<OxygenCalc />} />
         <Route path="/feed-intake" element={<Feed />} />
-        <Route path="about" element={<h1>About Page</h1>} />
+        <Route path="about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </div>

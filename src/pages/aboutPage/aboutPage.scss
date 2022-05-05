@@ -1,0 +1,47 @@
+@import "../../styles/utilites.scss";
+@import "../../index.scss";
+
+.about {
+  width: min(80rem, 100%);
+  &__para {
+    line-height: 2.5rem;
+    
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    
+    @include respond(tablet_portrait) {
+      flex-wrap: wrap;
+      justify-content: center ;
+    }
+
+  }
+
+
+  &__authorText {
+    margin-bottom: 0 !important;
+    line-height: 2.2rem;
+    @include respond(tablet_portrait) {
+      text-align: center;
+    }
+
+  }
+
+  &__thankText {
+    line-height: 2.5rem;
+  }
+
+  &__authorImg {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    object-position: -.5rem top;
+    border-radius: 50%;
+    margin: 2rem;
+    @include respond(tablet_portrait) {
+      flex-wrap: wrap;
+    }
+  }
+}
