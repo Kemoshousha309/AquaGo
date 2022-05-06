@@ -124,7 +124,7 @@ class OxygenCalc extends Calculator {
           </Button>
         </div>
         <div className="oxygenCalc__resultContianer">
-          <p className="oxygenCalc__result">
+          <p className="oxygenCalc__result paragraph">
             = &nbsp; <span className="oxygenCalc__DO">{calculatedDO}</span> Kg
             oxygen / hour
           </p>

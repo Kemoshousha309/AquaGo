@@ -1,5 +1,8 @@
 @import "../../../../styles/utilites.scss";
 
 .shrimp {
+  &__inputs {
+    margin-bottom: 4rem;
+  }
   @include threeInputsGroup;
 }

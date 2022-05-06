@@ -1,13 +1,14 @@
 import { PureComponent } from "react";
 import OperationCard from "../../components/operationCard/operationCard";
 import "./calculationsHomePage.scss";
+import feedImg from "../../assests/feed.jpeg";
+import paddelImg from "../../assests/airation.jpg";
 
 class CalculationsHomePage extends PureComponent {
   state = {
     cards: {
       oxygen: {
-        imgSrc:
-          "https://www.aquacultureinafrica.com/wp-content/uploads/2019/08/a-image-paddle-officielle-300x156.jpg",
+        imgSrc: paddelImg,
         backgroundColor: "#1565c0",
         header: (
           <span>
@@ -19,8 +20,7 @@ class CalculationsHomePage extends PureComponent {
         route: "/dissolved-oxygen",
       },
       feed: {
-        imgSrc:
-          "https://www.allaboutfeed.net/app/uploads/2020/12/001_276_rb-image-2756185.jpeg",
+        imgSrc: feedImg,
         backgroundColor: "#f4a261",
         header: "Feed",
         content:

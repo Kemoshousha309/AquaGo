@@ -6,6 +6,7 @@ import Footer from "./layout/footer/footer";
 import Header from "./layout/header/header";
 import AboutPage from "./pages/aboutPage/aboutPage";
 import CalculationsHomePage from "./pages/calculationsHomePage/calculationsHomePage";
+import HomePage from "./pages/homePge/homvePage";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<h1>Home page</h1>} />
+        <Route path="/" element={<HomePage />} />
         <Route path="calculations" element={<CalculationsHomePage />} />
         <Route path="/dissolved-oxygen" element={<OxygenCalc />} />
         <Route path="/feed-intake" element={<Feed />} />
