@@ -17,7 +17,7 @@ class Calculator extends PureComponent {
     let isValid = true;
     for (const key in inputs) {
       if (inputs[key].doValidation) {
-        const { valid, mess } = checkValidity(parseInt(inputs[key].value));
+        const { valid, mess } = checkValidity(parseInt(inputs[key].value), inputs[key].rules);
         isValid = isValid && valid;
         inputs[key].valid = valid;
         inputs[key].mess = mess;

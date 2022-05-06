@@ -14,7 +14,7 @@ function AboutPage(props) {
         make the engineer's life easier by doing aquaculture tasks faster and
         safer.
       </p>
-      <h2 className="heading-1">Development</h2>
+      <h2 className="heading-1">Development | author</h2>
       <div className="about__author">
         <img
           src={profileImg}
@@ -24,7 +24,7 @@ function AboutPage(props) {
         <p className="about__authorText paragraph">
           Hey, geeks! <br />I am Kareem shousha a front-end developer. My
           academic study is in fishers and aquaculture science. I loved the
-          programming development area world so I decided to direct my
+          programming development area. so, I decided to direct my
           self-study there. I have developed this app for aquaculture engineers
           to make their lives easier.{" "}
         </p>
